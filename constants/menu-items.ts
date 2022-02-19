@@ -42,9 +42,9 @@ const MENU_OPTIONS: MenuOption[] = [
     url: "/wallets",
     subItems: [
       {
-        name: "New Fund",
+        name: "New Wallet",
         icon: AttachMoney,
-        url: "/new-fund",
+        url: "/new-wallet",
       },
       {
         name: "Purchased Funds",
