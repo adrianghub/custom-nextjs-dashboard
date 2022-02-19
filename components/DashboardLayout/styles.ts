@@ -17,4 +17,5 @@ export const Container = styled.div`
   export const PageContainer = styled.div`
     padding: 20px;
     width: 80vw;
+    margin-left: auto;
   `;

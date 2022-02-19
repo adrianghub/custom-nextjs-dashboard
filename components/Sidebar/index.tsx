@@ -1,7 +1,11 @@
 import { SidebarContainer, SidebarText } from "./styles";
 
-const Sidebar = () => (
-  <SidebarContainer>
+type SidebarProps = {
+  isOpened: boolean;
+};
+
+const Sidebar = ({ isOpened }: SidebarProps) => (
+  <SidebarContainer isOpened={isOpened}>
     <SidebarText>Menu</SidebarText>
   </SidebarContainer>
 );

@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import DashboardLayout from '../components/DashboardLayout';
 import { Text } from '../styles/styles';
 
 

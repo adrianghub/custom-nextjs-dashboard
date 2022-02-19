@@ -1,7 +1,16 @@
-import { HeaderContainer, TitleContainer } from "./styles";
+import { Menu, ChevronLeft } from "@styled-icons/material";
+import { HeaderContainer, TitleContainer, IconContainer } from "./styles";
 
-const Header = () => (
+type HeaderProps = {
+  isOpened: boolean,
+  toggleDrawer: () => void,
+};
+
+const Header = ({ isOpened, toggleDrawer }: HeaderProps) => (
   <HeaderContainer>
+    <IconContainer onClick={toggleDrawer}>
+      {isOpened ? <ChevronLeft /> : <Menu />}
+    </IconContainer>
     <TitleContainer>Header</TitleContainer>
   </HeaderContainer>
 );
