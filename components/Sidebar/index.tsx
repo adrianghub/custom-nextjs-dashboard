@@ -1,4 +1,6 @@
-import { SidebarContainer, SidebarText } from "./styles";
+import { MENU_ITEMS } from "../../constants/menu-items";
+import MenuList from "../MenuList";
+import { SidebarContainer } from "./styles";
 
 type SidebarProps = {
   isOpened: boolean;
@@ -6,7 +8,7 @@ type SidebarProps = {
 
 const Sidebar = ({ isOpened }: SidebarProps) => (
   <SidebarContainer isOpened={isOpened}>
-    <SidebarText>Menu</SidebarText>
+    <MenuList options={MENU_ITEMS} />
   </SidebarContainer>
 );
 

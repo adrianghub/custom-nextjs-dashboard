@@ -5,12 +5,10 @@ type SidebarContainerProps = {
 };
 
 export const SidebarContainer = styled.aside<SidebarContainerProps>`
+display: flex;
+flex-direction: column;
 width: ${(props) => (props.isOpened ? "20vw" : "0vw" )};
 background-color: #00022e;
 transition: width: 0.5s;
 overflow: hidden;
-`;
-
-export const SidebarText = styled.p`
-color: #fff;
 `;
