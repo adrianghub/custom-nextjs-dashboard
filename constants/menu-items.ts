@@ -40,7 +40,7 @@ const MENU_OPTIONS: MenuOption[] = [
       {
         name: "New",
         icon: AddShoppingCart,
-        url: "/new-orders",
+        url: "/new-order",
       },
       {
         name: "Completed",
