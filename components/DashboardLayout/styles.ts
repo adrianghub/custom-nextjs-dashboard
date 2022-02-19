@@ -16,5 +16,8 @@ export const Container = styled.div`
   export const PageContainer = styled.div`
     padding: 20px;
     width: 80vw;
-    margin-left: auto;
+
+    @media (min-width: 768px) {
+      margin-left: auto;
+    } 
   `;
