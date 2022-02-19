@@ -2,12 +2,12 @@ import type { NextPage } from 'next'
 import Container from '../components/Container';
 
 
-const NewOrder: NextPage = () => {
+const Wallets: NextPage = () => {
   return (
-    <Container title="New Order">
-      <p>New Order</p>
+    <Container title="Wallets">
+      <p>Wallets</p>
     </Container>
   )
 }
 
-export default NewOrder;
+export default Wallets;

@@ -1,13 +1,17 @@
 import {
   Dashboard,
-  ShoppingCart,
-  People,
   AttachMoney,
   AddShoppingCart,
   Done,
   Business,
   HomeWork,
-  Person,
+  History,
+  AccountCircle,
+  ManageAccounts,
+  AccountBalanceWallet,
+  Logout,
+  Settings,
+  Lock
 } from "@styled-icons/material";
 
 type MenuOption = {
@@ -33,50 +37,50 @@ const MENU_OPTIONS: MenuOption[] = [
     url: "/",
   },
   {
-    name: "Orders",
-    icon: ShoppingCart,
-    url: "/orders",
+    name: "Wallets",
+    icon: AccountBalanceWallet,
+    url: "/wallets",
     subItems: [
       {
-        name: "New",
-        icon: AddShoppingCart,
-        url: "/new-order",
+        name: "New Fund",
+        icon: AttachMoney,
+        url: "/new-fund",
       },
       {
-        name: "Completed",
+        name: "Purchased Funds",
         icon: Done,
-        url: "/completed-orders",
+        url: "/purchased-funds",
       },
     ],
   },
   {
-    name: "Customers",
-    icon: People,
-    url: "/customers",
+    name: "Account",
+    icon: AccountCircle,
+    url: "/account",
     subItems: [
       {
-        name: "Corporate",
-        icon: Business,
-        url: "/corporate",
+        name: "Logout",
+        icon: Logout,
+        url: "/logout",
       },
       {
-        name: "SMB",
-        icon: HomeWork,
-        url: "/smb",
+        name: "Modify Account",
+        icon: ManageAccounts,
+        url: "/modify-account",
         subItems: [
           {
-            name: "Retail",
-            icon: Person,
-            url: "/retail",
+            name: "Change Password",
+            icon: Lock,
+            url: "/change-password",
           },
         ],
       },
     ],
   },
   {
-    name: "Inventory",
-    icon: AttachMoney,
-    url: "/inventory",
+    name: "History",
+    icon: History,
+    url: "/transactions-history",
   },
 ];
 
