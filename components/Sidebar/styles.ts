@@ -9,6 +9,6 @@ display: flex;
 flex-direction: column;
 width: ${(props) => (props.isOpened ? "20vw" : "0vw" )};
 background-color: #00022e;
-transition: width: 0.5s;
+transition: width 0.3s;
 overflow: hidden;
 `;

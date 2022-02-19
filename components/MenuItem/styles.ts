@@ -18,7 +18,7 @@ export const MenuItemContainer =
   }
 
   &:hover {
-    background-color: #00022e;
+    background-color: ${(props) => props.theme.colors.secondary};
     color: #fafafa;
     opacity: 0.5;
     cursor: pointer;
@@ -32,11 +32,11 @@ export const MenuItemContainer =
   }
 
   .menu-item > span {
-    color: #fafafa;
+    color: ${(props) => props.theme.colors.textLight};
   }
 
   &.selected {
-    background-color: #00023e;
-    color: #fff;
+    background-color: ${(props) => props.theme.colors.secondary};
+    color: ${(props) => props.theme.colors.textLight};
   }
 `;
